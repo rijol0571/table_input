@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="link">
+        <a href="../table/main.html">Table</a>
+    </div>
+    
+    <form class="hero">
+        <p class="reg">Registration</p>
+
+        <div class="head">
+            <label for="name">
+                <span>Full Name</span>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </label>
+
+            <label for="username">
+                <span>Username</span>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            </label>
+        </div>
+
+        <div class="main">
+            <label for="email">
+                <span>Email</span>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </label>
+
+            <label for="phoneNum">
+                <span>Phone Number</span>
+                <input type="number" name="phoneNum" id="phoneNum" placeholder="Enter your number" required>
+            </label>
+        </div>
+
+        <div class="foot">
+            <label for="password">
+                <span>Password</span>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required minlength="6" maxlength="8">
+            </label>
+
+            <label for="confirmpassword">
+                <span>Confirm Password</span>
+                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password" required minlength="6" maxlength="8">
+            </label>
+        </div>
+
+        <div class="gender">
+            <span>Gender</span>
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other"> Prefer not to say
+            </label>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
